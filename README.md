@@ -28,8 +28,8 @@ bundle install
 rails db:create
 rails db:migrate
 rails db:seed
-rails server
+rails server.
 
+Postman documentation
+https://documenter.getpostman.com/view/20906822/2sAYJ1mhkU
 
-
-* ...
