@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Task Management API with User Authentication
 
-Things you may want to cover:
+This is a simple RESTful API built with Ruby on Rails that manages tasks and user authentication. The API provides JWT-based authentication for users, allowing them to register, log in, and manage tasks.
 
-* Ruby version
+## Requirements
 
-* System dependencies
+- Ruby 3.3.6
+- Rails 8.0.1
+- PostgreSQL
 
-* Configuration
+## Gems Used
 
-* Database creation
+- `devise`: For user authentication and password management.
+- `devise-jwt`: To implement JWT token authentication with Devise.
+- `kaminari`: For pagination on task lists.
+- `active_model_serializers`: To serialize models for JSON responses.
 
-* Database initialization
+## Setup Instructions
 
-* How to run the test suite
+### 1. Clone the Repository
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+git clone https://github.com/yourusername/task-management-api.git
+cd task-management-api
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
 
-* Deployment instructions
+
 
 * ...
