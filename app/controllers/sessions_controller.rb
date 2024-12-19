@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
       
         if user&.valid_password?(params[:password])
           token = generate_jwt(user) # Manually generate JWT token
-          render json: { token: token, message: "Login successful" }, status: :ok
+          render json: { token: token, message: "Login successful", user: UserSerializer.new(user) }, status: :ok
         else
           render json: { error: "Invalid credentials" }, status: :unauthorized
         end
