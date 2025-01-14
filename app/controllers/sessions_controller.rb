@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
         end
       end
       
+    inflorocence
       private
       
       def generate_jwt(user)
