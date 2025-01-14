@@ -50,7 +50,10 @@ class TasksController < ApplicationController
         @current_user = User.find_by(id: payload['sub']) if payload
         render json: { error: "Unauthorized" }, status: :unauthorized unless @current_user
       end
-    
+     
+
+      headersk
+      
     def current_user
         @current_user
     end
